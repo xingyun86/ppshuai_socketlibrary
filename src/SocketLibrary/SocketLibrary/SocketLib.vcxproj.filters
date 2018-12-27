@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+    <Filter Include="slext">
+      <UniqueIdentifier>{e36081c1-1791-48ee-a4ee-825798cb67b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sync">
+      <UniqueIdentifier>{c143d48d-11bd-4c54-b9a2-412ef26b5b76}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{716f88ab-bcec-4c34-8a79-856572266a28}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AppBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AppLog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NTService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SLBlockObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SLBlockObjectMgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SLMessageQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SLSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SLTcpSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketAPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SocketSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TcpServer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UdpRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UdpSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sync\Event.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="sync\NullMutex.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="sync\ProcessMutex.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="sync\Semaphore.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="sync\Thread.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="sync\ThreadGroup.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="sync\TimerQueue.cpp">
+      <Filter>sync</Filter>
+    </ClCompile>
+    <ClCompile Include="util\Random.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AppLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NTService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="NTServiceEventLogMsg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLAlloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLBaseType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLBlockObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLBlockObjectMgr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLCommonDef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLMessageQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLNormalMemoryPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLObjectPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLScopeMemoryPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLSession_ActiveList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLSingleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLTaskEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLTcpSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SLTcpSessionEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketRunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketSendPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpRunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TcpServer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UdpRunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UdpSource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="slext\ByteBuffer.h">
+      <Filter>slext</Filter>
+    </ClInclude>
+    <ClInclude Include="slext\FixedArray.h">
+      <Filter>slext</Filter>
+    </ClInclude>
+    <ClInclude Include="slext\FixedObjectPool.h">
+      <Filter>slext</Filter>
+    </ClInclude>
+    <ClInclude Include="slext\refcount.h">
+      <Filter>slext</Filter>
+    </ClInclude>
+    <ClInclude Include="slext\SmallObjectPool.h">
+      <Filter>slext</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\Event.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\Guard.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\Mutex.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\NullMutex.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\ProcessMutex.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\Semaphore.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="SocketSource.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\Thread.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\ThreadGroup.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\ThreadManager.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\ThreadMutex.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="sync\TimerQueue.h">
+      <Filter>sync</Filter>
+    </ClInclude>
+    <ClInclude Include="util\Random.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\utility.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SocketLibrary.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

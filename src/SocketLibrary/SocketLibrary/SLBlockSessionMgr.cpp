@@ -1,0 +1,2 @@
+#include ".\slblocksessionmgr.h"
+

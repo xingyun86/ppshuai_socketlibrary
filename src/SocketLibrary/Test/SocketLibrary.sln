@@ -1,0 +1,42 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestServer", "TestServer\TestServer.vcxproj", "{232047CE-3784-4747-9898-23F081EB6E7F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D6AF40A-E4C4-4481-AF63-480671EE8303} = {6D6AF40A-E4C4-4481-AF63-480671EE8303}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestClient", "TestClient\TestClient.vcxproj", "{481D6ED3-7722-4FE9-9FFB-5116A5027D82}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D6AF40A-E4C4-4481-AF63-480671EE8303} = {6D6AF40A-E4C4-4481-AF63-480671EE8303}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SocketLibrary", "..\SocketLibrary\SocketLib.vcxproj", "{6D6AF40A-E4C4-4481-AF63-480671EE8303}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{232047CE-3784-4747-9898-23F081EB6E7F}.Debug|x86.ActiveCfg = Debug|Win32
+		{232047CE-3784-4747-9898-23F081EB6E7F}.Debug|x86.Build.0 = Debug|Win32
+		{232047CE-3784-4747-9898-23F081EB6E7F}.Release|x86.ActiveCfg = Release|Win32
+		{232047CE-3784-4747-9898-23F081EB6E7F}.Release|x86.Build.0 = Release|Win32
+		{481D6ED3-7722-4FE9-9FFB-5116A5027D82}.Debug|x86.ActiveCfg = Debug|Win32
+		{481D6ED3-7722-4FE9-9FFB-5116A5027D82}.Debug|x86.Build.0 = Debug|Win32
+		{481D6ED3-7722-4FE9-9FFB-5116A5027D82}.Release|x86.ActiveCfg = Release|Win32
+		{481D6ED3-7722-4FE9-9FFB-5116A5027D82}.Release|x86.Build.0 = Release|Win32
+		{6D6AF40A-E4C4-4481-AF63-480671EE8303}.Debug|x86.ActiveCfg = Debug|Win32
+		{6D6AF40A-E4C4-4481-AF63-480671EE8303}.Debug|x86.Build.0 = Debug|Win32
+		{6D6AF40A-E4C4-4481-AF63-480671EE8303}.Release|x86.ActiveCfg = Release|Win32
+		{6D6AF40A-E4C4-4481-AF63-480671EE8303}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(DPCodeReviewSolutionGUID) = preSolution
+		DPCodeReviewSolutionGUID = {00000000-0000-0000-0000-000000000000}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D6AF40A-E4C4-4481-AF63-480671EE8303}</ProjectGuid>
+    <RootNamespace>SocketLib</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <ProjectName>SocketLibrary</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25431.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\$(TargetName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;SOCKETLIBRARY_EXPORTS;_CRT_SECURE_NO_WARNINGS;SHOW_PRINTFINFO;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile />
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_USRDLL;SOCKETLIBRARY_EXPORTS;_CRT_SECURE_NO_WARNINGS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <StructMemberAlignment>Default</StructMemberAlignment>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>$(OutDir)$(TargetName).LIB</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <ResourceCompile />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AppBase.cpp" />
+    <ClCompile Include="AppLog.cpp" />
+    <ClCompile Include="NTService.cpp" />
+    <ClCompile Include="SLBlockObject.cpp" />
+    <ClCompile Include="SLBlockObjectMgr.cpp" />
+    <ClCompile Include="SLMessageQueue.cpp" />
+    <ClCompile Include="SLSession.cpp" />
+    <ClCompile Include="SLTcpSession.cpp" />
+    <ClCompile Include="SocketAPI.cpp" />
+    <ClCompile Include="SocketEvent.cpp" />
+    <ClCompile Include="SocketLib.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SocketRunner.cpp" />
+    <ClCompile Include="SocketSource.cpp" />
+    <ClCompile Include="sync\Event.cpp" />
+    <ClCompile Include="sync\NullMutex.cpp" />
+    <ClCompile Include="sync\ProcessMutex.cpp" />
+    <ClCompile Include="sync\Semaphore.cpp" />
+    <ClCompile Include="sync\Thread.cpp" />
+    <ClCompile Include="sync\ThreadGroup.cpp" />
+    <ClCompile Include="sync\TimerQueue.cpp" />
+    <ClCompile Include="TcpClient.cpp" />
+    <ClCompile Include="TcpRunner.cpp" />
+    <ClCompile Include="TcpServer.cpp" />
+    <ClCompile Include="UdpRunner.cpp" />
+    <ClCompile Include="UdpSource.cpp" />
+    <ClCompile Include="util\Random.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AppBase.h" />
+    <ClInclude Include="AppLog.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="NTService.h" />
+    <ClInclude Include="NTServiceEventLogMsg.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="SLAlloc.h" />
+    <ClInclude Include="SLBaseType.h" />
+    <ClInclude Include="SLBlockObject.h" />
+    <ClInclude Include="SLBlockObjectMgr.h" />
+    <ClInclude Include="SLCommonDef.h" />
+    <ClInclude Include="slext\ByteBuffer.h" />
+    <ClInclude Include="slext\FixedArray.h" />
+    <ClInclude Include="slext\FixedObjectPool.h" />
+    <ClInclude Include="slext\refcount.h" />
+    <ClInclude Include="slext\SmallObjectPool.h" />
+    <ClInclude Include="SLMessageQueue.h" />
+    <ClInclude Include="SLNormalMemoryPool.h" />
+    <ClInclude Include="SLObjectPool.h" />
+    <ClInclude Include="SLScopeMemoryPool.h" />
+    <ClInclude Include="SLSession.h" />
+    <ClInclude Include="SLSession_ActiveList.h" />
+    <ClInclude Include="SLSingleton.h" />
+    <ClInclude Include="SLTask.h" />
+    <ClInclude Include="SLTaskEx.h" />
+    <ClInclude Include="SLTcpSession.h" />
+    <ClInclude Include="SLTcpSessionEvent.h" />
+    <ClInclude Include="SocketAPI.h" />
+    <ClInclude Include="SocketEvent.h" />
+    <ClInclude Include="SocketLib.h" />
+    <ClInclude Include="SocketRunner.h" />
+    <ClInclude Include="SocketSendPool.h" />
+    <ClInclude Include="SocketSource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="sync\Event.h" />
+    <ClInclude Include="sync\Guard.h" />
+    <ClInclude Include="sync\Mutex.h" />
+    <ClInclude Include="sync\NullMutex.h" />
+    <ClInclude Include="sync\ProcessMutex.h" />
+    <ClInclude Include="sync\Semaphore.h" />
+    <ClInclude Include="sync\Thread.h" />
+    <ClInclude Include="sync\ThreadGroup.h" />
+    <ClInclude Include="sync\ThreadManager.h" />
+    <ClInclude Include="sync\ThreadMutex.h" />
+    <ClInclude Include="sync\TimerQueue.h" />
+    <ClInclude Include="TcpClient.h" />
+    <ClInclude Include="TcpRunner.h" />
+    <ClInclude Include="TcpServer.h" />
+    <ClInclude Include="UdpRunner.h" />
+    <ClInclude Include="UdpSource.h" />
+    <ClInclude Include="util\Random.h" />
+    <ClInclude Include="util\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SocketLibrary.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
