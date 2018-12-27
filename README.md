@@ -1,0 +1,2 @@
+# ppshuai_socketlibrary
+一个IOCP的高性能并发网络库，支持10K量客户端
