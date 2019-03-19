@@ -16,9 +16,4 @@
 
 // TODO: reference additional headers your program requires here
 #include "../../socketlibrary/config.h"
-#ifdef _DEBUG
-	#pragma comment(lib,"Debug\\socketlib.lib")
-#else
-	#pragma comment(lib,"Release\\socketlib.lib")
-#endif
 
